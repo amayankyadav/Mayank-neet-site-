@@ -1,0 +1,97 @@
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mayank | NEET Preparation & Career</title>
+  <style>
+    * {margin:0; padding:0; box-sizing:border-box; font-family:Arial, sans-serif;}
+    body {background:#f4f8fb; color:#333; line-height:1.6;}
+    header {background:#0077b6; color:#fff; padding:20px; text-align:center;}
+    header h1 {font-size:2.2rem; animation: fadeInDown 1.5s;}
+    nav {margin-top:10px;}
+    nav a {color:#fff; margin:0 10px; text-decoration:none; font-weight:bold; transition:color 0.3s;}
+    nav a:hover {color:#ffd60a;}
+    section {padding:40px 20px; max-width:1000px; margin:auto; animation: fadeIn 1.5s;}
+    section h2 {color:#0077b6; margin-bottom:15px; font-size:1.8rem; text-align:center;}
+    .card {background:#fff; padding:20px; margin:20px 0; border-radius:12px; box-shadow:0 3px 12px rgba(0,0,0,0.15); transition:transform 0.3s, box-shadow 0.3s;}
+    .card:hover {transform:translateY(-5px); box-shadow:0 6px 18px rgba(0,0,0,0.2);}
+    .slideshow {position:relative; max-width:100%; height:280px; overflow:hidden; border-radius:12px; margin-bottom:20px;}
+    .slide {display:none; width:100%; height:100%;}
+    .slide img {width:100%; height:100%; object-fit:cover; border-radius:12px;}
+    footer {background:#0077b6; color:#fff; text-align:center; padding:15px; margin-top:30px;}@keyframes fadeIn {
+  from {opacity:0;}
+  to {opacity:1;}
+}
+@keyframes fadeInDown {
+  from {opacity:0; transform:translateY(-20px);}
+  to {opacity:1; transform:translateY(0);}
+}
+
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Mayank's NEET Journey & Career</h1>
+    <nav>
+      <a href="#neet">NEET Prep</a>
+      <a href="#career">Career</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>  <section id="neet">
+    <h2>NEET Preparation</h2>
+    <div class="slideshow">
+      <div class="slide"><img src="https://source.unsplash.com/900x280/?books,study" alt="Study"></div>
+      <div class="slide"><img src="https://source.unsplash.com/900x280/?exam,notes" alt="Notes"></div>
+      <div class="slide"><img src="https://source.unsplash.com/900x280/?biology,science" alt="Biology"></div>
+    </div>
+    <div class="card">
+      <p>Hello, I am <strong>Mayank</strong>, a dedicated NEET aspirant. I have been preparing with focus on Physics, Chemistry, and Biology according to NCERT and NEET syllabus.</p>
+      <ul>
+        <li>Daily study schedule with proper revision</li>
+        <li>Focus on NCERT + standard reference books</li>
+        <li>Regular mock tests and PYQs practice</li>
+        <li>Time management and stress control techniques</li>
+      </ul>
+    </div>
+  </section>  <section id="career">
+    <h2>My Career Goals</h2>
+    <div class="slideshow">
+      <div class="slide"><img src="https://source.unsplash.com/900x280/?doctor,hospital" alt="Doctor"></div>
+      <div class="slide"><img src="https://source.unsplash.com/900x280/?medical,college" alt="Medical College"></div>
+      <div class="slide"><img src="https://source.unsplash.com/900x280/?surgery,healthcare" alt="Healthcare"></div>
+    </div>
+    <div class="card">
+      <p>My dream is to become a <strong>doctor</strong> and serve society through medical science. With strong determination, I aim to secure admission in a reputed medical college through NEET.</p>
+      <p>Future Goals:</p>
+      <ul>
+        <li>Crack NEET with a good score</li>
+        <li>Join MBBS program</li>
+        <li>Specialize in Medicine or Surgery</li>
+        <li>Contribute to healthcare and medical research</li>
+      </ul>
+    </div>
+  </section>  <section id="contact">
+    <h2>Contact</h2>
+    <div class="card">
+      <p>If you’d like to connect with me for study discussions, guidance, or collaboration, feel free to reach out.</p>
+      <p><strong>Email:</strong> my10203012@gamil.com</p>
+      <p><strong>Phone:</strong> +91-8545XXXXXX</p>
+    </div>
+  </section>  <footer>
+    <p>© 2025 Mayank | NEET Preparation & Career Website</p>
+  </footer>  <script>
+    let slideIndex = 0;
+    showSlides();
+
+    function showSlides() {
+      let slides = document.getElementsByClassName("slide");
+      for (let i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) {slideIndex = 1}
+      slides[slideIndex-1].style.display = "block";
+      setTimeout(showSlides, 3000); // Change image every 3 seconds
+    }
+  </script></body>
+</html>
